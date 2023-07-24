@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="blocks">
+        <!-- CHECKBOXES WHICH WILL WHAT OUR PASSWORD WILL CONTAIN -->
+        <div class="check-form">
+          <input type="checkbox" name="numbers" id="numbers" checked />
+          <label for="numbers">Numbers</label>
+        </div>
+        <div class="check-form">
+          <input type="checkbox" name="uppercase" id="uppercase" />
+          <label for="uppercase">UpperCase</label>
+        </div>
+        <div class="check-form">
+          <input type="checkbox" name="symbols" id="symbols" />
+          <label for="symbols">Symbols (e.g., $ % ^ & ) > < ? ' " @)</label>
+        </div>
+        <div class="check-form">
+          <input type="checkbox" name="spaces" id="spaces" />
+          <label for="spaces">Spaces</label>
+        </div>
+      </div>
+      <!-- BUTTON TO GENERATE PASSWORD -->
+      <button id="generate" class="btn-primary">Generate</button>
+      <div class="generate-form">
+        <div class="flex-row">
+          <span class="uppercase">Password</span>
+          <span class="uppercase" id="copy">Copy</span>
+        </div>
+        <div class="password">
+          <!-- HERE WILL BE OUR PASSWORD -->
+          <span id="password">0?^(T]3UL%Q!</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
